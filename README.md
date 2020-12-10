@@ -1,1 +1,1 @@
-## react redux ts
+## react typescript boilerplate
