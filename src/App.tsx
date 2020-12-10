@@ -1,10 +1,14 @@
+import GlobalStyles from "./theme/globalStyle";
 import styled from "styled-components";
 
 export default function App() {
   return (
-    <StyledApp>
-      <h1>Test</h1>
-    </StyledApp>
+    <>
+      <GlobalStyles />
+      <StyledApp>
+        <h1>Test</h1>
+      </StyledApp>
+    </>
   );
 }
 

@@ -1,1 +1,3 @@
-## react typescript boilerplate
+## React Typescript Boilerplate
+
+- Styled Components
