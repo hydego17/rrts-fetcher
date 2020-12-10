@@ -1,3 +1,3 @@
-## React Typescript Boilerplate
+## React Redux TS
 
 - Styled Components
