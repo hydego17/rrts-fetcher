@@ -49,10 +49,12 @@ class _App extends Component<AppProps, AppState> {
   render() {
     return (
       <StyledApp>
-        <button onClick={this.onButtonClick}>Fetch Todos!</button>
+        <div className="container">
+          <button onClick={this.onButtonClick}>Fetch Todos!</button>
 
-        {this.state.fetching ? <p>Loading...</p> : null}
-        <ul>{this.renderList()}</ul>
+          {this.state.fetching ? <p>Loading...</p> : null}
+          <ul>{this.renderList()}</ul>
+        </div>
       </StyledApp>
     );
   }
@@ -70,6 +72,11 @@ const StyledApp = styled.div`
   min-height: 100vh;
   color: white;
 
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   button {
     border-radius: 2px;
     outline: 0;
@@ -81,10 +88,14 @@ const StyledApp = styled.div`
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
+
     li {
-      padding: 0.5rem 0;
+      padding: 0.5rem 0 0.5rem 0.5rem;
 
       &:hover {
+        background: #252525;
         cursor: pointer;
       }
     }
