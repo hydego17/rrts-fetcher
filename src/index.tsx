@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 
 import { reducers } from "./reducers";
 import GlobalStyles from "./theme/globalStyle";
-import App from "./components/App";
+import { App } from "./components/App";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
